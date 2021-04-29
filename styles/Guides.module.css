@@ -4,3 +4,11 @@
   letter-spacing: 1px;
   line-height: 1.6em; 
 }
+.error{
+  padding: 10px;
+  text-align: center;
+  border: 1px solid red;
+  color:brown;
+  font-weight: 700;
+  border-radius: 20px;
+}
