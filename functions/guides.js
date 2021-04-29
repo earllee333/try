@@ -4,8 +4,16 @@ exports.handler = async(event,context)=>{
         {author:'Luigi'},
         {age:28}
     ]
-    return{
+    if(context.clientContext.user){
+        return{
         status:200,
         body:JSON.stringify(guides)
+     }
     }
+    return{
+        status:401,
+        body:JSON.stringify({mssg:'You do not have promision to see this'})
+    }
+
+    
 }
