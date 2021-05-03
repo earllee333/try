@@ -1,57 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-/* base styles */
-:root {
-  --primary: #166ae8;
-}
+html,
 body {
   padding: 0;
-  margin: 0 20px;
-  font-family: 'Quicksand', sans-serif;
-  color: #444;
-  background: #f2f2f2;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-.container {
-  max-width: 960px;
-  margin: 0 auto;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-/* navbar */
+.container {
+  max-width: 960px;
+  margin:auto
+}
 nav {
   margin: 20px auto 40px;
   display: flex;
   align-items: center;
 }
-nav h1 {
-  margin-left: 10px;
+nav li {
+  display: inline-block;
+  margin-left: 16px;
+}
+nav h1{
+  padding-left:auto;
 }
 nav ul {
   margin-left: auto;
   list-style-type: none;
   padding: 0;
 }
-nav li {
-  display: inline-block;
-  margin-left: 16px;
+.footer{
+ margin-bottom: auto;
+ text-align:center;
+ padding:160px;
+ font-weight:800;
+ font-size:5px;
+ color:rgb(245, 231, 231);
 }
-nav li.btn {
-  padding: 10px 16px;
-  border: 2px solid var(--primary);
-  border-radius:30px;
+h1{
+  padding:10px;
+}
+nav li.btn{
+  border: 1px solid red;
+  padding: 1px;
+  border-radius:20px;
   font-weight: 600;
-  color: var(--primary);
-  cursor: pointer;
+  font-size:16px
 }
 nav li.btn:hover {
-  color: white;
-  background: var(--primary);
+ color:seagreen
+}
+.carspho{display:block}
+.carsmenu .action a{
+  color:steelblue;
+  margin-left:300px;
+  font-weight:500;
+  font-size :20px;
+  padding:30px
+
 }
 
-/* banner */
-.banner img {
-  border-radius: 6px;
+.carsmenu .action a:hover{
+  text-decoration: underline;
+  color:tomato;
+
 }
