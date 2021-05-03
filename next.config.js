@@ -3,7 +3,7 @@ module.exports = {
     images: {
       domains: ['images.ctfassets.net']
     },
-    target: experimental-serverless-trace
+    target: 'experimental-serverless-trace'
     
   }
 
